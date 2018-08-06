@@ -1,0 +1,14 @@
+input[type=submit] {
+    background: #1F253D;
+    color: #95a5a6;
+    font-size: 2em;
+    padding: 0.2em;
+    transition: background 1s ease-in-out;
+}
+
+input[type=submit]:hover {
+    background: #e64c65;
+    color: #fff;
+    transition: background 1s ease-in-out;
+    cursor: pointer;
+}
