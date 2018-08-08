@@ -1,12 +1,12 @@
 import React from 'react';
-import guessButton from './css/Form.css'
+import './css/Form.css'
 
 // Displays guess button
-export default function Form() {
+export default function Form(props) {
     return (
-        <form>
-            <input type="text" />
+        <form onSubmit={props.onSubmit} >
+            <input type="text" onChange={props.onChange} maxLength="2" onClick={props.onClick} />
             <input value="Guess" type="submit" />
         </form>
     );
-}
+}   
